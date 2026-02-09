@@ -1,0 +1,1949 @@
+{
+    "config": {
+        "width": 12000,
+        "height": 7000,
+        "ground_y": 300,
+        "gravity": 0.8,
+        "screen_color": [
+            0,
+            0,
+            0
+        ],
+        "settings_color": [
+            0,
+            0,
+            200
+        ],
+        "hint_color": [
+            0,
+            0,
+            200
+        ],
+        "settings_hint_color": [
+            255,
+            255,
+            255
+        ],
+        "floor_color": [
+            200,
+            50,
+            0
+        ],
+        "pull_rect_color": [
+            255,
+            0,
+            0
+        ]
+    },
+    "obstacles": [
+        {
+            "rect": [
+                500,
+                300,
+                20,
+                40
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                600,
+                200,
+                20,
+                40
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                700,
+                160,
+                20,
+                40
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                600,
+                90,
+                20,
+                40
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                700,
+                40,
+                20,
+                20
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                760,
+                40,
+                10,
+                300
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                520,
+                90,
+                40,
+                20
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                1300,
+                220,
+                40,
+                20
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                1800,
+                220,
+                100,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                1800,
+                150,
+                100,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                1900,
+                150,
+                10,
+                80
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                1950,
+                100,
+                70,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                2100,
+                190,
+                40,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                2200,
+                150,
+                40,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                2300,
+                150,
+                40,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                2400,
+                120,
+                40,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                2500,
+                100,
+                40,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                2600,
+                60,
+                40,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                2710,
+                -30,
+                40,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                2600,
+                -100,
+                40,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                2500,
+                -160,
+                40,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                2400,
+                -230,
+                40,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                2290,
+                -290,
+                50,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                2200,
+                -340,
+                50,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                2100,
+                -380,
+                50,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                2000,
+                -400,
+                50,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                2100,
+                -480,
+                50,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                2200,
+                -500,
+                50,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                2300,
+                -540,
+                50,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                2400,
+                -540,
+                50,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                2500,
+                -540,
+                50,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                2600,
+                -540,
+                50,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                2900,
+                150,
+                20,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                3000,
+                150,
+                20,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                3190,
+                -1100,
+                200,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                3380,
+                -1100,
+                10,
+                100
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                3380,
+                -1000,
+                130,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                3500,
+                -1100,
+                10,
+                100
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                3500,
+                -1100,
+                200,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                3700,
+                -1100,
+                10,
+                100
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                3700,
+                -1000,
+                110,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                3800,
+                -1100,
+                10,
+                100
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                3800,
+                -1100,
+                200,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                4000,
+                -1000,
+                110,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                4000,
+                -1100,
+                10,
+                100
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                4100,
+                -1100,
+                200,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                4100,
+                -1100,
+                10,
+                100
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                4300,
+                -1000,
+                110,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                4300,
+                -1100,
+                10,
+                100
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                4400,
+                -1100,
+                10,
+                100
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                4400,
+                -1100,
+                200,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                4600,
+                -1000,
+                110,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                4600,
+                -1100,
+                10,
+                100
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                4700,
+                -1100,
+                10,
+                100
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                4700,
+                -1100,
+                200,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                4900,
+                -1000,
+                110,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                4900,
+                -1100,
+                10,
+                100
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                5000,
+                -1100,
+                10,
+                100
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                5000,
+                -1100,
+                200,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                5200,
+                -1000,
+                110,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                5200,
+                -1100,
+                10,
+                100
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                5300,
+                -1100,
+                10,
+                100
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                5300,
+                -1100,
+                700,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6200,
+                -1100,
+                500,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6800,
+                -1100,
+                200,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                7000,
+                -1190,
+                10,
+                100
+            ],
+            "color": [
+                255,
+                255,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                7000,
+                -1200,
+                80,
+                10
+            ],
+            "color": [
+                255,
+                255,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                7080,
+                -1300,
+                10,
+                110
+            ],
+            "color": [
+                255,
+                255,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                7000,
+                -1310,
+                90,
+                10
+            ],
+            "color": [
+                255,
+                255,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                7000,
+                -1410,
+                10,
+                110
+            ],
+            "color": [
+                255,
+                255,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6880,
+                -1250,
+                70,
+                10
+            ],
+            "color": [
+                255,
+                100,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6750,
+                -1370,
+                80,
+                10
+            ],
+            "color": [
+                255,
+                100,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6750,
+                -1480,
+                10,
+                110
+            ],
+            "color": [
+                255,
+                100,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6750,
+                -1490,
+                80,
+                10
+            ],
+            "color": [
+                255,
+                100,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6820,
+                -1700,
+                10,
+                200
+            ],
+            "color": [
+                255,
+                100,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                7000,
+                -1200,
+                80,
+                10
+            ],
+            "color": [
+                255,
+                255,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                7000,
+                -1500,
+                10,
+                200
+            ],
+            "color": [
+                255,
+                255,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                7000,
+                -1310,
+                90,
+                10
+            ],
+            "color": [
+                255,
+                255,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                7000,
+                -1410,
+                10,
+                110
+            ],
+            "color": [
+                255,
+                255,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6750,
+                -1370,
+                80,
+                10
+            ],
+            "color": [
+                255,
+                100,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6750,
+                -1480,
+                10,
+                110
+            ],
+            "color": [
+                255,
+                100,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6750,
+                -1490,
+                80,
+                10
+            ],
+            "color": [
+                255,
+                100,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6820,
+                -1590,
+                10,
+                110
+            ],
+            "color": [
+                255,
+                100,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6880,
+                -1400,
+                70,
+                10
+            ],
+            "color": [
+                255,
+                255,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                7000,
+                -1500,
+                90,
+                10
+            ],
+            "color": [
+                255,
+                255,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                7000,
+                -1610,
+                90,
+                10
+            ],
+            "color": [
+                255,
+                255,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                7080,
+                -1610,
+                10,
+                110
+            ],
+            "color": [
+                255,
+                255,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6880,
+                -1590,
+                70,
+                10
+            ],
+            "color": [
+                255,
+                100,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6750,
+                -1700,
+                80,
+                10
+            ],
+            "color": [
+                255,
+                100,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6750,
+                -1810,
+                10,
+                110
+            ],
+            "color": [
+                255,
+                100,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6750,
+                -1810,
+                80,
+                10
+            ],
+            "color": [
+                255,
+                100,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6820,
+                -2000,
+                10,
+                200
+            ],
+            "color": [
+                255,
+                100,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6880,
+                -1750,
+                70,
+                10
+            ],
+            "color": [
+                255,
+                255,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                7000,
+                -1800,
+                10,
+                200
+            ],
+            "color": [
+                255,
+                255,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                7000,
+                -1800,
+                90,
+                10
+            ],
+            "color": [
+                255,
+                255,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                7000,
+                -1900,
+                90,
+                10
+            ],
+            "color": [
+                255,
+                255,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                7080,
+                -1900,
+                10,
+                110
+            ],
+            "color": [
+                255,
+                255,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6650,
+                -1550,
+                40,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6370,
+                -1550,
+                50,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6150,
+                -1650,
+                50,
+                10
+            ],
+            "color": [
+                200,
+                50,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6000,
+                -1500,
+                70,
+                10
+            ],
+            "color": [
+                200,
+                50,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                5900,
+                -1550,
+                70,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                5800,
+                -1650,
+                50,
+                10
+            ],
+            "color": [
+                255,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                7400,
+                -3700,
+                50,
+                4040
+            ],
+            "color": [
+                0,
+                255,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6000,
+                -1900,
+                10,
+                200
+            ],
+            "color": [
+                0,
+                255,
+                0
+            ],
+            "collide": true,
+            "show": true
+        }
+    ],
+    "decorations": [
+        {
+            "rect": [
+                6420,
+                -1550,
+                50,
+                10
+            ],
+            "color": [
+                200,
+                50,
+                0
+            ],
+            "collide": false,
+            "show": true
+        },
+        {
+            "rect": [
+                6150,
+                -1450,
+                50,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": false,
+            "show": true
+        }
+    ],
+    "invisible_rects": [
+        {
+            "rect": [
+                9250,
+                220,
+                70,
+                10
+            ],
+            "color": [
+                150,
+                150,
+                150
+            ],
+            "collide": true,
+            "show": false
+        },
+        {
+            "rect": [
+                9400,
+                180,
+                70,
+                10
+            ],
+            "color": [
+                150,
+                150,
+                150
+            ],
+            "collide": true,
+            "show": false
+        },
+        {
+            "rect": [
+                9500,
+                160,
+                180,
+                10
+            ],
+            "color": [
+                150,
+                150,
+                150
+            ],
+            "collide": true,
+            "show": false
+        },
+        {
+            "rect": [
+                9730,
+                160,
+                68,
+                10
+            ],
+            "color": [
+                150,
+                150,
+                150
+            ],
+            "collide": true,
+            "show": false
+        },
+        {
+            "rect": [
+                9850,
+                130,
+                50,
+                10
+            ],
+            "color": [
+                150,
+                150,
+                150
+            ],
+            "collide": true,
+            "show": false
+        }
+    ],
+    "coins": [
+        {
+            "rect": [
+                525,
+                80,
+                20,
+                20
+            ],
+            "color": [
+                255,
+                215,
+                0
+            ],
+            "collected": false
+        },
+        {
+            "rect": [
+                1850,
+                180,
+                20,
+                20
+            ],
+            "color": [
+                255,
+                215,
+                0
+            ],
+            "collected": false
+        },
+        {
+            "rect": [
+                2000,
+                -100,
+                20,
+                20
+            ],
+            "color": [
+                255,
+                215,
+                0
+            ],
+            "collected": false
+        },
+        {
+            "rect": [
+                3245,
+                -300,
+                20,
+                20
+            ],
+            "color": [
+                255,
+                215,
+                0
+            ],
+            "collected": false
+        },
+        {
+            "rect": [
+                6700,
+                -1400,
+                20,
+                20
+            ],
+            "color": [
+                255,
+                215,
+                0
+            ],
+            "collected": false
+        },
+        {
+            "rect": [
+                9640,
+                70,
+                20,
+                20
+            ],
+            "color": [
+                0,
+                0,
+                0
+            ],
+            "collected": false
+        }
+    ],
+    "lava": [
+        {
+            "rect": [
+                800,
+                300,
+                90,
+                40
+            ],
+            "color": [
+                255,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                960,
+                320,
+                130,
+                20
+            ],
+            "color": [
+                255,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                2780,
+                -200,
+                50,
+                540
+            ],
+            "color": [
+                255,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                3100,
+                150,
+                50,
+                190
+            ],
+            "color": [
+                255,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                3100,
+                290,
+                4000,
+                50
+            ],
+            "color": [
+                255,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                5600,
+                -1180,
+                300,
+                50
+            ],
+            "color": [
+                255,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6370,
+                -1350,
+                300,
+                10
+            ],
+            "color": [
+                255,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                6000,
+                -1650,
+                70,
+                10
+            ],
+            "color": [
+                0,
+                0,
+                255
+            ],
+            "collide": true,
+            "show": true
+        },
+        {
+            "rect": [
+                9200,
+                290,
+                800,
+                50
+            ],
+            "color": [
+                0,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true
+        }
+    ],
+    "portals_in": [],
+    "portals_out": []
+}

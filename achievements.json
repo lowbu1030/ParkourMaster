@@ -1,0 +1,87 @@
+{
+    "first_jump": {
+        "name": "First Jump!",
+        "desc": "完成第一次跳躍。",
+        "unlocked": true
+    },
+    "try it again": {
+        "name": "Try It Again!",
+        "desc": "在第一關第一次死亡。",
+        "unlocked": true
+    },
+    "check it out!": {
+        "name": "Check It Out!",
+        "desc": "碰到第一個紀錄點。",
+        "unlocked": true
+    },
+    "let's become rich": {
+        "name": "Let's Become Rich",
+        "desc": "拿到第一塊錢。",
+        "unlocked": true
+    },
+    "first_try": {
+        "name": "First Try!",
+        "desc": "完成第一關。",
+        "unlocked": false
+    },
+    "help!! I can't!!": {
+        "name": "Help!! I can't!!",
+        "desc": "死亡100次。",
+        "unlocked": true
+    },
+    "Lv1 coin_master": {
+        "name": "Lv1 Coin Master",
+        "desc": "收集第一關 7 枚金幣。",
+        "unlocked": false
+    },
+    "deathless": {
+        "name": "Deathless",
+        "desc": "未死亡完成一關。",
+        "unlocked": false
+    },
+    "parkour master": {
+        "name": "Parkour Master",
+        "desc": "再不死亡的情況下且在100秒內通關",
+        "unlocked": false
+    },
+    "oops!": {
+        "name": "Oops!",
+        "desc": "在第二關第一次死亡。",
+        "unlocked": false
+    },
+    "it's hot!": {
+        "name": "It's hot!",
+        "desc": "通過第一關岩漿。",
+        "unlocked": true
+    },
+    "where are you going?": {
+        "name": "Where Are You Going?",
+        "desc": "走到-1500以外的地方",
+        "unlocked": true
+    },
+    "rainbow player": {
+        "name": "Rainbow_Player",
+        "desc": "以彩虹模式完成關卡。",
+        "unlocked": false
+    },
+    "rainbow's proud": {
+        "name": "Rainbow's Proud",
+        "desc": "以彩虹模式完成關卡且不死亡。",
+        "unlocked": false
+    },
+    "I can't see you!": {
+        "name": "I Can't See You!",
+        "desc": "以隱形模式完成關卡。",
+        "unlocked": false
+    },
+    "vague": {
+        "name": "Vague",
+        "desc": "打開困難模式。",
+        "unlocked": false
+    },
+    "I'm blind!!": {
+        "name": "I'm Blind!!",
+        "desc": "打開超級困難模式。",
+        "unlocked": false
+    }
+}
