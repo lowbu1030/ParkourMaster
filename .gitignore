@@ -4,3 +4,11 @@ __pycache__/
 
 # 忽略遊戲的存檔文件（如果你不想把自己的紀錄傳上去）
 save_game.json
+
+# 忽略遊戲關卡的py檔
+levels/
+lv.py
+lv1.py
+lv2.py
+lv3.py
+lv4.py
