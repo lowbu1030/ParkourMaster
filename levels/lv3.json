@@ -3,7 +3,7 @@
         "width": 10000,
         "height": 7000,
         "ground_y": 300,
-        "gravity": 1,
+        "gravity": 0.9,
         "screen_color": [
             90,
             90,
@@ -1319,6 +1319,7 @@
             "show": true
         }
     ],
+    "flow_lava": [],
     "portals_in": [],
     "portals_out": []
 }

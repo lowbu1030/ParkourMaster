@@ -3,21 +3,21 @@
         "width": 10000,
         "height": 7000,
         "ground_y": 300,
-        "gravity": 1,
+        "gravity": 1.2,
         "screen_color": [
-            90,
-            90,
-            90
+            0,
+            0,
+            0
         ],
         "settings_color": [
-            215,
             0,
+            100,
             0
         ],
         "hint_color": [
             255,
             255,
-            255
+            0
         ],
         "settings_hint_color": [
             255,
@@ -27,11 +27,11 @@
         "floor_color": [
             255,
             255,
-            0
+            255
         ],
         "pull_rect_color": [
-            0,
             255,
+            0,
             0
         ]
     },
@@ -899,6 +899,7 @@
             "show": true
         }
     ],
+    "flow_lava": [],
     "portals_in": [],
     "portals_out": []
 }

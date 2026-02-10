@@ -51,6 +51,7 @@ def load_level(filename):
     decorations = []
     invisible_rect = []
     lava_rect = []
+    flow_lava = []
     for obs in data["obstacles"]:
         # 將 JSON 的 list 轉回 pygame.Rect
         rect = pygame.Rect(obs["rect"])
@@ -65,6 +66,18 @@ def load_level(filename):
     for lv in data["lava"]:
         rect = pygame.Rect(lv["rect"])
         lava_rect.append({"rect": rect, "color": tuple(lv["color"]), "collide": lv["collide"], "show": lv["show"]})
+    for flv in data["flow_lava"]:
+        rect = pygame.Rect(flv["rect"])
+        flow_lava.append(
+            {
+                "rect": rect,
+                "color": tuple(flv["color"]),
+                "collide": flv["collide"],
+                "show": flv["show"],
+                "speed": flv["speed"],
+                "range": flv["y_range"],
+            }
+        )
     return obstacles, decorations, invisible_rect, lava_rect, data["config"]
 
 
@@ -114,58 +127,59 @@ def screen_resets(is_init=False):
         y_scale, \
         level_config
 
-    # 基礎物理量更新
-    ground_y = tool.H * 0.8
-    gravity = tool.H * 0.0019 * level_config.get("gravity", 1.0)
-    player_size = int(tool.H * 0.05)
-    jump_power = tool.H * -0.025
-    max_jump_hold = 12  # 允許持續按住增加高度的幀數 (約 0.25 秒)
+    # 1. 優先計算縮放比例 (這是一切的基礎)
+    y_scale = tool.H / 600
+    # x_scale = tool.W / 700 # 若以後需要橫向縮放可開啟
 
+    # 2. 更新基礎物理量 (使用新的 y_scale)
+    ground_y = 480 * y_scale  # 固定比例基準點
+    player_size = int(tool.H * 0.05)
+    gravity = tool.H * 0.0019 * level_config.get("gravity", 1.0)
+    jump_power = tool.H * -0.025
+    move_speed = 5 * y_scale
+    fast_move_speed = 7 * y_scale
+    max_jump_hold = 12
+
+    # 3. 根據情況調整玩家位置
     if is_init:
-        # 情況 A：遊戲剛開始或是死亡重來，玩家回到左側起點
+        # 遊戲開始或死亡：重置位置與攝影機
         player_x = tool.W * 0.1
         player_y = ground_y - player_size
         scroll_x, scroll_y = 0, 0
     else:
-        # 情況 B：只是縮放螢幕，要把玩家「挪」到新位置，避免他掉出螢幕
+        # 僅視窗縮放：僅清空跳躍計時，不強制移動玩家，但要更新紀錄
         jump_timer = 0
-        # x_scale = tool.W / 700  #暫時用不到
-        y_scale = tool.H / 600
-        # --- 計算移動速度 ---
-        move_speed = 5 * y_scale  # 移動速度
-        fast_move_speed = 7 * y_scale
-    old_w = tool.W  # 更新舊寬度紀錄
-    old_h = tool.H  # 更新舊高度紀錄
+
+    # 4. 更新歷史紀錄
+    old_w = tool.W
+    old_h = tool.H
 
 
 def reset_game():
     global ground_y, vel_y, player_x, player_y, player_size, is_jumping, is_moving, has_jumped
 
-    # 畫面設定
-    screen_resets(is_init=True)
-
-    # 初始位置
-    player_x = tool.W * 0.1  # 玩家起始於左側 10%
-    player_y = ground_y - player_size
-
-    # 物理狀態
+    # 初始化物理狀態
     vel_y = 0
     is_jumping = False
     is_moving = False
     has_jumped = False
 
-
-reset_game()
+    # 執行畫面與位置設定 (會呼叫 screen_resets 並設定 player_y)
+    screen_resets(is_init=True)
 
 
 def die_resets():
-    global player_x, player_y, key_die, vel_y, on_ground
-    # 之後把紀錄點做好之後要改
-    player_x = tool.W * 0.1
-    player_y = ground_y - player_size
+    global player_x, player_y, key_die, vel_y, on_ground, is_jumping, has_jumped
+
+    # 死亡重置：回到起點並恢復物理狀態
     key_die = False
     vel_y = 0
     on_ground = True
+    is_jumping = False
+    has_jumped = False
+
+    # 使用畫面設定來精準定位
+    screen_resets(is_init=True)
 
 
 while running:
@@ -236,6 +250,7 @@ while running:
                     LEVEL_WIDTH, LEVEL_HEIGHT = level_config["width"], level_config["height"]
                     levels = "Lv1"
                     game_state = "start_game"
+                    reset_game()
                 if lv2_btn.collidepoint(mouse_pos) and is_pressing[1]:
                     # 載入第二關資料
                     all_obstacles, all_decorations, all_invisible_rects, lava_rects, level_config = load_level(LV2_PATH)
@@ -243,6 +258,7 @@ while running:
                     levels = "Lv1"
                     levels = "Lv2"
                     game_state = "start_game"
+                    reset_game()
                 if lv3_btn.collidepoint(mouse_pos) and is_pressing[2]:
                     # 載入第三關資料
                     all_obstacles, all_decorations, all_invisible_rects, lava_rects, level_config = load_level(LV3_PATH)
@@ -250,6 +266,7 @@ while running:
                     levels = "Lv1"
                     levels = "Lv3"
                     game_state = "start_game"
+                    reset_game()
                 if lv4_btn.collidepoint(mouse_pos) and is_pressing[3]:
                     # 載入第四關資料
                     all_obstacles, all_decorations, all_invisible_rects, lava_rects, level_config = load_level(LV4_PATH)
@@ -257,6 +274,7 @@ while running:
                     levels = "Lv1"
                     levels = "Lv4"
                     game_state = "start_game"
+                    reset_game()
                 if back_btn.collidepoint(mouse_pos) and is_pressing[4]:
                     game_state = "menu"
                 reset_pressing()
@@ -463,7 +481,9 @@ while running:
                 screen, level_config["floor_color"], (i - scroll_x, ground_y - scroll_y, 80 * y_scale, 20 * y_scale)
             )  # 畫玩家
         # 因為 player_x 是世界座標，所以要減去 scroll_x 轉為螢幕座標
-        pygame.draw.rect(screen, tool.Colors.BLUE, (player_x - scroll_x, player_y - scroll_y, player_size, player_size))
+        pygame.draw.rect(
+            screen, tool.Colors.BLUE, (player_x - scroll_x, player_y - scroll_y, current_player_size, current_player_size)
+        )
         tool.show_text(
             "colliding_rect: None" if colliding_rect == -1 else f"colliding_rect: {colliding_rect}",
             level_config["hint_color"],
@@ -471,8 +491,8 @@ while running:
             0.9,
             size=20,
         )
-        tool.show_text(
-            f"x: {round(player_x, 2):g}, y: {round(ground_y - player_y, 2):g}",
+        tool.show_text(  # round(player_x, 2):g    round(ground_y - player_y, 2):g
+            f"x: {int(player_x)}, y: {int(ground_y - player_y)}",
             level_config["hint_color"],
             0.7,
             0.1,

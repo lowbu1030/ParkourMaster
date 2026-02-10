@@ -1944,6 +1944,588 @@
             "show": true
         }
     ],
+    "flow_lava": [
+        {
+            "rect": [
+                3300,
+                -1400,
+                2000,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                1430,
+                1600
+            ]
+        },
+        {
+            "rect": [
+                6830,
+                -2100,
+                170,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 2,
+            "y_range": [
+                1430,
+                2400
+            ]
+        },
+        {
+            "rect": [
+                6830,
+                -1100,
+                170,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                1430,
+                2400
+            ]
+        },
+        {
+            "rect": [
+                7600,
+                0,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                313
+            ]
+        },
+        {
+            "rect": [
+                7650,
+                200,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                177
+            ]
+        },
+        {
+            "rect": [
+                7700,
+                50,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                172
+            ]
+        },
+        {
+            "rect": [
+                7750,
+                -52,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                268
+            ]
+        },
+        {
+            "rect": [
+                7800,
+                85,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                169
+            ]
+        },
+        {
+            "rect": [
+                7850,
+                -1,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                313
+            ]
+        },
+        {
+            "rect": [
+                7900,
+                50,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                214
+            ]
+        },
+        {
+            "rect": [
+                7950,
+                -52,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                181
+            ]
+        },
+        {
+            "rect": [
+                8000,
+                200,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                284
+            ]
+        },
+        {
+            "rect": [
+                8050,
+                50,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                126
+            ]
+        },
+        {
+            "rect": [
+                8100,
+                -52,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                291
+            ]
+        },
+        {
+            "rect": [
+                8150,
+                85,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                257
+            ]
+        },
+        {
+            "rect": [
+                8200,
+                -1,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                191
+            ]
+        },
+        {
+            "rect": [
+                8250,
+                50,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                116
+            ]
+        },
+        {
+            "rect": [
+                8300,
+                -52,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                317
+            ]
+        },
+        {
+            "rect": [
+                8350,
+                85,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                132
+            ]
+        },
+        {
+            "rect": [
+                8400,
+                -1,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                175
+            ]
+        },
+        {
+            "rect": [
+                8450,
+                50,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                302
+            ]
+        },
+        {
+            "rect": [
+                8500,
+                -52,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                146
+            ]
+        },
+        {
+            "rect": [
+                8550,
+                200,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                268
+            ]
+        },
+        {
+            "rect": [
+                8600,
+                50,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                281
+            ]
+        },
+        {
+            "rect": [
+                8650,
+                -52,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                296
+            ]
+        },
+        {
+            "rect": [
+                8700,
+                85,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                230
+            ]
+        },
+        {
+            "rect": [
+                8750,
+                -1,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                265
+            ]
+        },
+        {
+            "rect": [
+                8800,
+                50,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                248
+            ]
+        },
+        {
+            "rect": [
+                8850,
+                -52,
+                50,
+                10
+            ],
+            "color": [
+                215,
+                0,
+                0
+            ],
+            "collide": true,
+            "show": true,
+            "speed": 1,
+            "y_range": [
+                -20,
+                223
+            ]
+        }
+    ],
     "portals_in": [],
     "portals_out": []
 }

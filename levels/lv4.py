@@ -173,6 +173,7 @@ data = {
     "invisible_rects": [],
     "coins": [],
     "lava": [],
+    "flow_lava": [],
     "portals_in": [],
     "portals_out": [],
 }
@@ -196,6 +197,19 @@ for c in coins:
 # 轉換岩漿
 for lv in lava:
     data["lava"].append({"rect": rect_to_list(lv.rect), "color": list(lv.color), "collide": lv.can_collide, "show": lv.show})
+
+# 轉換移動岩漿
+for flv in flow_lava:
+    data["flow_lava"].append(
+        {
+            "rect": rect_to_list(flv["rect"].rect),
+            "color": list(flv["rect"].color),
+            "collide": flv["rect"].can_collide,
+            "show": flv["rect"].show,
+            "speed": flv["speed"],
+            "y_range": flv["y_range"],
+        }
+    )
 
 # 1. 取得資料夾路徑
 folder_path = Path(__file__).parent.resolve()
